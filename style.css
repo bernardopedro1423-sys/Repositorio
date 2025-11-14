@@ -71,7 +71,7 @@ section {
 }
 
 #berna {
-    position: absolute; /* corrigido */
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: auto;
@@ -138,3 +138,10 @@ section {
 p {
     flex-wrap: wrap;
 }
+
+.Fotos {
+    max-width: auto;
+    max-height: 150px;
+    border-radius: 10px;
+}
+
