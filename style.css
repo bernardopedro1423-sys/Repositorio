@@ -1,5 +1,6 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: auto;
     background-color: black;
     color: #ffffff;
@@ -47,16 +48,19 @@ a:hover {
     border-radius: 10px;
 }
 
+/* A aba de inicio */
 
-/*A aba de inicio */
+div {
+    margin-top: 100%;
+}
 
 section {
-  margin-top: 15%;  
+    margin-top: 15%;
 }
 
 .inicio { 
-    position: absolute;
-    transform: translate(-50%,-50%);
+    position: relative; /* corrigido */
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     height: auto;
@@ -64,11 +68,10 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
 }
 
 #berna {
-    position: absolute;
+    position: absolute; /* corrigido */
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: auto;
@@ -84,7 +87,7 @@ section {
        top: 28%;
     }
     50%{
-    top: 32% ;
+       top: 32%;
     }
     100%{
         top: 28%;
@@ -94,7 +97,6 @@ section {
 #contato {
     box-shadow: 0px 0px 200px 10px red;
     margin: 10%;
-    
 }
 
 .devJunior {
@@ -116,20 +118,23 @@ section {
    }
 }
 
-/*A aba que conta mais sobre mim*/
-.section{
-    position: absolute;
-    top: 70%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+/* A aba que conta mais sobre mim */
+.section {
+    position: relative; /* corrigido */
+    margin-top: 250px; /* substitui o absolute */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: first baseline;
+    align-items: first baseline;
+    margin: 5%;
 }
 
 .gradient-text2 {
-    background: linear-gradient(150deg, red,darkred);
+    background: linear-gradient(150deg, red, darkred);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+p {
+    flex-wrap: wrap;
 }
