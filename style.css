@@ -1,0 +1,135 @@
+body {
+    height: 100vh;
+    width: auto;
+    background-color: black;
+    color: #ffffff;
+    font-size: 15px;
+    flex-direction: column;
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px red;
+}
+
+h1 {
+    margin: 15px;
+}
+
+.gradient-text1 {
+    background: linear-gradient(90deg, darkred, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;  /* permite quebrar linha quando faltar espaço */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+a:hover {
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+
+/*A aba de inicio */
+
+section {
+  margin-top: 15%;  
+}
+
+.inicio { 
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#berna {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: auto;
+    max-height: 150px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 200px 10px red;
+    animation: flutuar 2s infinite;
+    margin-top: 20%;
+}
+
+@keyframes flutuar {
+    0%{
+       top: 28%;
+    }
+    50%{
+    top: 32% ;
+    }
+    100%{
+        top: 28%;
+    }
+}
+
+#contato {
+    box-shadow: 0px 0px 200px 10px red;
+    margin: 10%;
+    
+}
+
+.devJunior {
+    animation: animarCaracteres 2s infinite;
+}
+
+@keyframes animarCaracteres {
+   25%{
+       color: black;
+   }
+   50%{
+       color: red;
+   }
+   75%{
+       color: white;
+   }
+   100%{
+       color: black;
+   }
+}
+
+/*A aba que conta mais sobre mim*/
+.section{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-text2 {
+    background: linear-gradient(150deg, red,darkred);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
