@@ -8,6 +8,7 @@ body {
     flex-direction: column;
 }
 
+
 /* cabeçalho */
 header {
     display: flex;
@@ -20,7 +21,7 @@ header {
 
 h1 {
     margin: 15px;
-}
+} 
 
 .gradient-text1 {
     background: linear-gradient(90deg, darkred, red);
@@ -41,6 +42,9 @@ a {
     color: white;
     padding: 8px 10px;
     border-radius: 10px;
+    width: auto;
+    display: flex;
+    justify-content: center;
 }
 
 a:hover {
@@ -137,6 +141,7 @@ section {
 
 p {
     flex-wrap: wrap;
+    margin: 1%;
 }
 
 .Fotos {
@@ -144,4 +149,3 @@ p {
     max-height: 150px;
     border-radius: 10px;
 }
-
